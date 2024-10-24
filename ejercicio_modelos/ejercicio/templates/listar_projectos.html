@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los proyectos</title>
+</head>
+<body>
+    {% for proyecto in  listar_proyectos %}
+
+    <ul>
+                        
+    <li>nombre: {{proyecto.nombre}}</li>
+
+    <li>descripcion: {{proyecto.descripcion}} </li>
+
+    <li>duracion: {{proyecto.duracion}}</li>
+
+    <li>fecha_inicio: {{proyecto.fecha_inicio}}</li>
+
+    <li>fecha_fin: {{proyecto.fecha_fin}} </li>
+
+    <ul>
+
+    {% endfor %}
+
+</body>
+</html>
