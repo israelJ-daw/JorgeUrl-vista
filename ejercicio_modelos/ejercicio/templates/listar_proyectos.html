@@ -6,7 +6,10 @@
     <title>Todos los proyectos</title>
 </head>
 <body>
+    <h1>ee</h1>
     {% for proyecto in  listar_proyectos %}
+
+    <div>
 
     <ul>
                         
@@ -16,12 +19,13 @@
 
     <li>duracion: {{proyecto.duracion}}</li>
 
-    <li>fecha_inicio: {{proyecto.fecha_inicio}}</li>
+    <li>fecha inicio: {{proyecto.fecha_inicio}}</li>
 
-    <li>fecha_fin: {{proyecto.fecha_fin}} </li>
+    <li>fecha fin: {{proyecto.fecha_fin}} </li>
 
     <ul>
 
+    </div>
     {% endfor %}
 
 </body>
