@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las etiquetas de todas las tareas</title>
+</head>
+<body>
+    <h1>Todas las etiquetas de todas las tareas</h1>
+    {% for toda in todas %}
+    <div>
+        <ul>
+            <li>etiquetas: {{ toda.nombre }}</li>
+            {% for tarea in toda.tarea.all %}
+            <li>tareas: {{ tarea.titulo }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</body>
+</html>
+
+    

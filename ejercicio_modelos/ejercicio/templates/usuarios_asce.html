@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios asignados</title>
+</head>
+<body>
+    <h1>Usuarios asignados a tareas</h1>
+    {% for asignado in  asignaciones %}
+
+    <div>
+
+    <ul>
+                        
+        
+        <li>Usuario: {{ asignado.usuario.nombre }} </li>
+        <li>Tarea: {{ asignado.tarea.titulo }} </li>
+        <li>Fecha de Asignación: {{ asignado.fecha_asignacion }} </li>
+    <ul>
+
+    </div>
+    {% endfor %}
+
+</body>
+</html>

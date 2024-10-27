@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Comentarios por tarea año 2024 y palabra Back</title>
+</head>
+<body>
+    <h1> Todos Comentarios por tarea año 2024 y palabra Back </h1>
+     {% for todo in todos %}
+
+    <div>
+
+        <ul>
+            
+            <li>comentario: {{ todo.contenido }} </li>
+
+            <li>año: {{ todo.fecha_comentario }} </li>
+            
+        </ul>    
+    </div>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimo usuario comentado en la tarea con id 5</title>
+</head>
+<body>
+    <h1> Ultimo usuario comentado en la tarea con id 5</h1>
+     {% for comentario in comentarios %}
+
+    <div>
+
+        <ul>
+            
+            <li>usuario: {{ comentario.autor.nombre }} </li>
+
+
+            <li> contenido: {{ comentario.contenido }} </li>
+
+            <li>ID: {{ comentario.autor_id }}</li>
+        </ul>
+    </div>
+    {% endfor %}
+
+</body>
+</html>

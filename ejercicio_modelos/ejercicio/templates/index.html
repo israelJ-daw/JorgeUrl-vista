@@ -13,8 +13,31 @@
 
    <li> <a href="{% url 'listar_proyectos' %}">Todos los proyectos</a></a></li>
 
+  <li> <a href="{%url 'tareas_desce' proyecto_id=9%}">Tareas Descedentes</a> </li>
+
+  <li><a href= "{%url 'usuarios_asce' %}">Usuarios asignados</a></a></li>
+
+  <li><a href= "{%url 'tarea_texto' %}">Tarea texto especifico</a></a></li>
+
+
+  <li><a href= "{%url 'tareas_año' %}">Tareas año 2024</a></a></li>
+
+
+  <li> <a href="{% url 'comentarios_view' %}">Último usuario</a>  </li>
+
+
+  <li> <a href="{% url 'todos_comentarios_tareas'  palabra="Back" año=2024%}">Todos Comentarios por tarea año 2024 y palabra Back</a>  </li>
+
+
+  <li> <a href="{% url 'todas_etiquetas'%}">Todas etiqueras y tareas</a>  </li>
+
+
+  <li> <a href="{% url 'usuarios_no_asignados'%}">Usuarios no asignados</a>  </li>
+
+
 
 </ul>    
+
 
 
 

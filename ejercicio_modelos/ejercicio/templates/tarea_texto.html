@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea texto especifico "Place"</title>
+</head>
+<body>
+    <h1>Tarea texto especifico "Place"</h1>
+    {% for texto in  textos %}
+
+    <div>
+
+    <ul>
+
+        <li>usuario: {{ texto.usuario.nombre }}</li>         
+        <li>tarea: {{ texto.tarea.titulo }}</li>
+        <li>observacion: {{ texto.observaciones }}</li>
+        
+
+    </ul>
+
+    </div>
+    {% endfor %}
+
+</body>
+</html>
